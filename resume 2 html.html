@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Irshad Sheikh - Resume</title>
+    <!-- Use Google Fonts for a professional look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Use Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f4f8;
+            color: #2c3e50;
+        }
+        .resume-container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .section-title {
+            color: #0d47a1;
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #0d47a1;
+            border-radius: 9999px;
+        }
+        .text-accent-blue {
+            color: #0d47a1;
+        }
+        .skill-card {
+            background-color: #e3f2fd;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            transition: transform 0.2s ease-in-out;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(13, 71, 161, 0.1);
+        }
+        .list-style-line {
+            list-style-type: none;
+        }
+        .list-style-line li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        .list-style-line li::before {
+            content: '\2022'; /* Unicode for a bullet point */
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.5rem;
+            line-height: 1;
+            color: #0d47a1;
+        }
+    </style>
+</head>
+
+<body class="p-6">
+    <div class="resume-container">
+        <!-- Header Section -->
+        <header class="bg-gradient-to-r from-blue-800 to-indigo-900 text-white p-8 md:p-12 flex flex-col md:flex-row items-center justify-between rounded-t-xl">
+            <div class="flex items-center space-x-6 mb-4 md:mb-0">
+                <div class="text-6xl text-blue-300">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white">Mohammad Irshad Sheikh</h1>
+                    <p class="text-lg md:text-xl text-blue-200 font-medium mt-2">Senior Android Engineer | Cross-Device & Cloud Integrations</p>
+                </div>
+            </div>
+            <div class="flex flex-col md:items-end text-sm md:text-base text-blue-200 space-y-3 mt-4 md:mt-0">
+                <a href="tel:+919977979803" class="flex items-center space-x-3 hover:text-white transition-colors">
+                    <i class="fa-solid fa-phone text-lg text-blue-300"></i>
+                    <span>+91 99779 79803</span>
+                </a>
+                <a href="mailto:ir9977@gmail.com" class="flex items-center space-x-3 hover:text-white transition-colors">
+                    <i class="fa-solid fa-envelope text-lg text-blue-300"></i>
+                    <span>ir9977@gmail.com</span>
+                </a>
+                <a href="https://linkedin.com/in/irshadsheikh" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3 hover:text-white transition-colors">
+                    <i class="fab fa-linkedin text-lg text-blue-300"></i>
+                    <span>linkedin.com/in/irshadsheikh</span>
+                </a>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 p-8 md:p-12">
+            <!-- Left Column: Summary, Skills, Awards -->
+            <aside class="col-span-1 space-y-12">
+                <!-- Professional Summary -->
+                <section>
+                    <h2 class="section-title text-2xl font-bold mb-4 flex items-center">
+                       <span class="mr-2 text-2xl">👨‍💻</span> Professional Summary
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        A Senior Android Engineer with over <strong>9 years</strong> of experience in architecting and delivering high-performance, production-ready mobile applications. My expertise spans across <strong>40+ projects</strong>, where I have a proven track record of improving application performance by over <strong>40%</strong> and security by <strong>50%</strong>. A skilled remote leader, I have successfully managed and mentored teams of up to <strong>15 junior engineers</strong>, driving productivity and a culture of technical excellence.
+                    </p>
+                </section>
+                
+                <!-- Technical Skills -->
+                <section>
+                    <h2 class="section-title text-2xl font-bold mb-4 flex items-center">
+                        <span class="mr-2 text-2xl">🛠️</span> Technical Skills
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="skill-card">
+                            <h3 class="font-bold text-gray-800 mb-2 flex items-center">
+                                <i class="fa-brands fa-android text-accent-blue mr-2"></i>Core Android & Mobile
+                            </h3>
+                            <p class="text-gray-600 text-sm">
+                                Kotlin, Java, Jetpack Compose, Android Jetpack, Coroutines, RxJava, Retrofit, Room, C/C++ (NDK)
+                            </p>
+                        </div>
+                        <div class="skill-card">
+                            <h3 class="font-bold text-gray-800 mb-2 flex items-center">
+                                <i class="fa-solid fa-layer-group text-blue-500 mr-2"></i>Architecture & Design
+                            </h3>
+                            <p class="text-gray-600 text-sm">
+                                MVVM, MVI, Clean Architecture, Dependency Injection (Dagger/Hilt, Koin), Service-Oriented Architecture (SOA), IPC
+                            </p>
+                        </div>
+                        <div class="skill-card">
+                            <h3 class="font-bold text-gray-800 mb-2 flex items-center">
+                                <i class="fa-solid fa-box-open text-purple-500 mr-2"></i>Frameworks & Libraries
+                            </h3>
+                            <p class="text-gray-600 text-sm">
+                                DataStore, WorkManager, Navigation Component, Data/View Binding, LiveData, Broadcast Receivers
+                            </p>
+                        </div>
+                        <div class="skill-card">
+                            <h3 class="font-bold text-gray-800 mb-2 flex items-center">
+                                <i class="fa-solid fa-vial-circle-check text-green-500 mr-2"></i>Testing & Quality
+                            </h3>
+                            <p class="text-gray-600 text-sm">
+                                Unit Testing (JUnit, Mockito, Robolectric), UI Testing (Espresso, UI Automator), Performance Profiling, ANR Analysis
+                            </p>
+                        </div>
+                        <div class="skill-card">
+                            <h3 class="font-bold text-gray-800 mb-2 flex items-center">
+                                <i class="fa-solid fa-cogs text-pink-500 mr-2"></i>DevOps & Tools
+                            </h3>
+                            <p class="text-gray-600 text-sm">
+                                Git, Jenkins, Gradle, CI/CD, JIRA, ADB, Firebase, Linux/Android OS Fundamentals
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Education -->
+                <section>
+                    <h2 class="section-title text-2xl font-bold mb-4 flex items-center">
+                        <span class="mr-2 text-2xl">🎓</span> Education
+                    </h2>
+                    <div class="relative pl-6">
+                        <div class="absolute left-0 top-1 w-2 h-2 bg-gray-500 rounded-full"></div>
+                        <h3 class="text-lg font-bold text-gray-800">B.E. Computer Science</h3>
+                        <p class="text-gray-600">Rajiv Gandhi Prodyogiki Vishwavidyalaya. (2010–2014)</p>
+                    </div>
+                </section>
+            </aside>
+
+            <!-- Right Column: Experience, Achievements, Awards -->
+            <main class="col-span-1 lg:col-span-2 space-y-12">
+                <!-- Selected Achievements -->
+                <section>
+                    <h2 class="section-title text-2xl font-bold mb-4 flex items-center">
+                        <span class="mr-2 text-2xl">🏆</span> Selected Achievements
+                    </h2>
+                    <ul class="text-gray-700 list-style-line">
+                        <li>Spearheaded architectural refactoring and performance optimization on existing projects, improving overall app performance by over <strong>40%</strong> and securing new enterprise clients.</li>
+                        <li>Engineered a custom data management system that eliminated data loss for critical offline transactions, including orders and payments, for client applications.</li>
+                        <li>Enhanced application security by over <strong>50%</strong> through the implementation of a comprehensive security protocol and data encryption at the system level.</li>
+                        <li>Successfully navigated a third-party security audit for a flagship application, achieving a clean report with <strong>zero high or mid-level vulnerabilities</strong> at release.</li>
+                        <li>Architected and developed a core SDK for OTP verification at Walkover, which currently handles over <strong>1 million monthly hits</strong> from integrated client applications.</li>
+                    </ul>
+                </section>
+
+                <!-- Professional Experience -->
+                <section>
+                    <h2 class="section-title text-2xl font-bold mb-4 flex items-center">
+                        <span class="mr-2 text-2xl">💼</span> Professional Experience
+                    </h2>
+                    <div class="space-y-8">
+                        <!-- WINIT -->
+                        <div class="relative pl-6">
+                            <div class="absolute left-0 top-1 w-2 h-2 bg-accent-blue rounded-full"></div>
+                            <h3 class="text-lg font-bold text-gray-800">WINIT — <span class="text-accent-blue">Lead Android Developer</span></h3>
+                            <p class="text-gray-600 text-sm">Jul 2020 – Present</p>
+                            <ul class="mt-2 text-gray-700 list-style-line">
+                                <li>Led a team of <strong>10-15 junior engineers</strong> in the development and maintenance of over <strong>40 distinct projects</strong> over 5 years, with a focus on delivering high-quality, production-ready applications.</li>
+                                <li>Successfully managed and mentored the team remotely, ensuring project milestones were met on time and maintaining high team productivity and morale.</li>
+                                <li>Pioneered a performance-driven development culture, improving existing projects' performance by <strong>40%</strong> and strengthening the company's portfolio for new business.</li>
+                                <li>Engineered a robust offline data management system that guarantees <strong>zero data loss</strong> for collected sales and order data, crucial for mission-critical SFA apps.</li>
+                                <li>Ensured seamless cross-device compatibility for all applications, with successful deployments on <strong>10-12 different Android versions</strong> and a range of budget to high-end devices.</li>
+                            </ul>
+                        </div>
+                        <!-- Walkover -->
+                        <div class="relative pl-6">
+                            <div class="absolute left-0 top-1 w-2 h-2 bg-gray-500 rounded-full"></div>
+                            <h3 class="text-lg font-bold text-gray-800">Walkover — <span class="text-accent-blue">Senior Android Developer</span></h3>
+                            <p class="text-gray-600 text-sm">Feb 2019 – Jun 2020</p>
+                            <ul class="mt-2 text-gray-700 list-style-line">
+                                <li>Led the development of a production-grade application from concept to launch, achieving <strong>10K+ downloads</strong> on the Play Store.</li>
+                                <li>Engineered a custom social login and payment gateway SDK to simplify third-party integrations and improve developer efficiency.</li>
+                                <li>Optimized background processes and battery consumption, improving app performance by <strong>15%</strong> on low-end devices.</li>
+                                <li>Conducted regular code reviews and introduced automated testing practices, raising the overall code quality bar for the team.</li>
+                            </ul>
+                        </div>
+                        <!-- Shrinkcom Software -->
+                        <div class="relative pl-6">
+                            <div class="absolute left-0 top-1 w-2 h-2 bg-gray-500 rounded-full"></div>
+                            <h3 class="text-lg font-bold text-gray-800">Shrinkcom Software — <span class="text-accent-blue">Senior Android Developer</span></h3>
+                            <p class="text-gray-600 text-sm">Jul 2017 – Jan 2019</p>
+                            <ul class="mt-2 text-gray-700 list-style-line">
+                                <li>Engineered complex AR/VR modules using OpenGL and the NDK to create immersive user experiences for a flagship application.</li>
+                                <li>Developed a secure communication layer for a financial app, ensuring end-to-end data encryption and integrity.</li>
+                                <li>Managed the complete lifecycle of multiple production apps, from feature design and development to deployment and maintenance.</li>
+                            </ul>
+                        </div>
+                        <!-- Abaxsoft Solutions -->
+                        <div class="relative pl-6">
+                            <div class="absolute left-0 top-1 w-2 h-2 bg-gray-500 rounded-full"></div>
+                            <h3 class="text-lg font-bold text-gray-800">Abaxsoft Solutions — <span class="text-accent-blue">Android Developer</span></h3>
+                            <p class="text-gray-600 text-sm">Apr 2014 – Jun 2017</p>
+                            <ul class="mt-2 text-gray-700 list-style-line">
+                                <li>Refactored the data synchronization layer, resulting in a <strong>40% reduction</strong> in API calls and improved data consistency.</li>
+                                <li>Developed robust location-based services and algorithms to solve GPS precision issues, enhancing accuracy across key features.</li>
+                                <li>Designed and implemented responsive UI layouts and custom views to provide an intuitive user experience.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- Leadership & Awards -->
+                <section>
+                    <h2 class="section-title text-2xl font-bold mb-4 flex items-center">
+                        <span class="mr-2 text-2xl">🏅</span> Leadership & Awards
+                    </h2>
+                    <ul class="text-gray-700 list-style-line">
+                        <li>Promoted twice in 3 years at WINIT for exceptional leadership.</li>
+                        <li>Recognized as Best Tech Mentor for training junior developers.</li>
+                        <li>Innovation Award winner for integrating performance analytics into builds.</li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
